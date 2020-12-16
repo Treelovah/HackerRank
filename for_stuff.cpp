@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+    int a = 0 ,b = 0;
+    string num[10] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+    cin >> a >> b;
+    for (int i = a; i <= b; ++i) {
+        if (i > 9) {
+            i % 2 == 0 ? cout << "even\n" : cout << "odd\n";
+        } else {
+            cout << num[i] << endl;
+        }        
+    }    
+    return 0;
+}
+
